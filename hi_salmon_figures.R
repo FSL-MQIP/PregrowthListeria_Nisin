@@ -12,7 +12,7 @@
 
 
 ### Read in data.
-pregrowth_salmon <- read.csv("/Users/ruixichen/OneDrive - Cornell University/Cornell document/Food safety lab/Salmon Project/pregrowth_condition/Data/Processing/Dataframes/pre_growth_raw_RC021620.csv")
+pregrowth_salmon <- read.csv("pregrowth_salmon_raw.csv")
 pregrowth_salmon$Day <- as.factor(pregrowth_salmon$Day)
 
 ### Build salmon lme model.
@@ -112,7 +112,7 @@ nis_con_by_day.ctr1_df$significance <- c("", "*", "", "",
                                          "", "**", "***", "***")
 
 # Read in log reduction dataset for plotting.
-pregrowth_salmon_LR <- read.csv("/Users/ruixichen/OneDrive - Cornell University/Cornell document/Food safety lab/Salmon Project/pregrowth_condition/Data/processing/Dataframes/pre_growth_raw_LR_RC021620.csv")
+pregrowth_salmon_LR <- read.csv("pregrowth_salmon_raw_LR.csv")
 pregrowth_salmon_LR$Day <- as.factor(pregrowth_salmon_LR$Day)
 
 # Summarise raw data
@@ -230,7 +230,7 @@ high_inoc_fg6 <- ggplot(data=salmon_lme_ef2_df, aes(x=Condition, y=fit, group=Ni
 ### Make figure 7.
 
 # Read in raw log reduction data for plotting.
-pregrowth_salmon_LR <- read.csv("/Users/ruixichen/OneDrive - Cornell University/Cornell document/Food safety lab/Salmon Project/pregrowth_condition/Data/processing/Dataframes/pre_growth_raw_LR_RC021620.csv")
+pregrowth_salmon_LR <- read.csv("pregrowth_salmon_raw_LR.csv")
 pregrowth_salmon_LR$Day <- as.factor(pregrowth_salmon_LR$Day)
 
 # Summarise raw data for plotting.
