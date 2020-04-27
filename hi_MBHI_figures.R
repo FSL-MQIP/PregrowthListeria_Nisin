@@ -12,7 +12,7 @@
 
 
 ### Read in MBHI data.
-pregrowth_mBHI <- read.delim("/Users/ruixichen/OneDrive - Cornell University/Cornell document/Food safety lab/Salmon Project/pregrowth_condition/Data/Processing/Dataframes/mBHI_df_no37C_RC111819.txt")
+pregrowth_mBHI <- read.delim("pregrowth_MBHI_raw.txt")
 pregrowth_mBHI$Strain <- as.factor(pregrowth_mBHI$Strain)
 
 ### Remove columns that contain NA in outcome column (Log_Diff).
