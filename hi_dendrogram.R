@@ -10,7 +10,7 @@
 #library(car);library(effects);library(lemon);library(dplyr)
 
 
-setwd("/Users/ruixichen/OneDrive - Cornell University/Cornell document/Food safety lab/Salmon Project/pregrowth_condition/WGS work/6_strains_cgMLST/cgMLST Results_2/")
+setwd("cgMLST Results_2/")
 
 # Get list of *.results files
 files <- list.files()[grepl(".results",list.files())]
