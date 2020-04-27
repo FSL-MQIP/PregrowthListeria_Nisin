@@ -11,7 +11,7 @@
 
 
 ### Read in data.
-pregrowth_salmon <- read.csv("/Users/ruixichen/OneDrive - Cornell University/Cornell document/Food safety lab/Salmon Project/pregrowth_condition/Data/Processing/Dataframes/pre_growth_raw_RC021620.csv")
+pregrowth_salmon <- read.csv("pregrowth_salmon_raw")
 pregrowth_salmon$Day <- as.factor(pregrowth_salmon$Day)
 
 
